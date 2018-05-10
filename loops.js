@@ -12,19 +12,17 @@ function forLoop(array) {
 
 function whileLoop(n) {
   while (n > 0) {
-    console.log(--n)
+    console.log(--n);
   }
-  return 'done'
+  return 'done';
 }
 
 function maybeTrue() {
-  return Math.random() >= 0.5
+  return Math.random() >= 0.5;
 }
-
-//maybeTrue()
 
 function doWhileLoop(array) {
   do {
     array.pop();
-  } while (array.length > 0 || !maybeTrue());
+  } while (array.length > 0 && maybeTrue());
 }
